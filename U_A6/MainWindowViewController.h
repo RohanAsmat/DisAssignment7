@@ -9,7 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MainWindowViewController : NSViewController
+
 @property (weak) IBOutlet NSTextField *displayLanguage;
+@property (weak) IBOutlet NSMatrix *RadioGroupLanguage;
+
 - (IBAction)choseLanguage:(id)sender;
+
 
 @end
