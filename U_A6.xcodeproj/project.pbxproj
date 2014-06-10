@@ -24,6 +24,8 @@
 		1C68809C1946099000167902 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809A1946099000167902 /* EditViewController.m */; };
 		1C68809D1946099000167902 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C68809B1946099000167902 /* EditViewController.xib */; };
 		1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */; };
+		DC40BB581947741F00ABBE8C /* CPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = DC40BB571947741F00ABBE8C /* CPlist.m */; };
+		DC40BB5A194774F800ABBE8C /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC40BB59194774F800ABBE8C /* languages.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		1C68809A1946099000167902 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		1C68809B1946099000167902 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
 		1C68809F19461DFA00167902 /* HelloWorldModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloWorldModel.xcdatamodel; sourceTree = "<group>"; };
+		DC40BB561947741F00ABBE8C /* CPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlist.h; sourceTree = "<group>"; };
+		DC40BB571947741F00ABBE8C /* CPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPlist.m; sourceTree = "<group>"; };
+		DC40BB59194774F800ABBE8C /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,8 @@
 		1C6880631945DDC600167902 /* U_A6 */ = {
 			isa = PBXGroup;
 			children = (
+				DC40BB561947741F00ABBE8C /* CPlist.h */,
+				DC40BB571947741F00ABBE8C /* CPlist.m */,
 				1C68806F1945DDC600167902 /* AppDelegate.h */,
 				1C6880701945DDC600167902 /* AppDelegate.m */,
 				1C6880721945DDC700167902 /* MainMenu.xib */,
@@ -144,6 +151,7 @@
 				1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */,
 				1B9EEC9725DF9240A9AB49E8 /* Translation.m */,
 				1B9EEE3AF3319D8110B23103 /* Translation.h */,
+				DC40BB59194774F800ABBE8C /* languages.plist */,
 			);
 			path = U_A6;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 				1C6880681945DDC600167902 /* InfoPlist.strings in Resources */,
 				1C6880761945DDC700167902 /* Images.xcassets in Resources */,
 				1C68806E1945DDC600167902 /* Credits.rtf in Resources */,
+				DC40BB5A194774F800ABBE8C /* languages.plist in Resources */,
 				1C6880741945DDC700167902 /* MainMenu.xib in Resources */,
 				1C6880981946076C00167902 /* MainWindowViewController.xib in Resources */,
 			);
@@ -279,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */,
+				DC40BB581947741F00ABBE8C /* CPlist.m in Sources */,
 				1C68809C1946099000167902 /* EditViewController.m in Sources */,
 				1C6880971946076C00167902 /* MainWindowViewController.m in Sources */,
 				1C6880711945DDC600167902 /* AppDelegate.m in Sources */,
@@ -496,6 +506,7 @@
 				1C68808D1945DDC700167902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C68808E1945DDC700167902 /* Build configuration list for PBXNativeTarget "U_A6Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				1C6880901945DDC700167902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

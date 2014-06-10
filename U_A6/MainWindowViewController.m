@@ -7,6 +7,7 @@
 //
 
 #import "MainWindowViewController.h"
+#import "CPlist.h"
 
 @interface MainWindowViewController ()
 
@@ -14,6 +15,7 @@
 
 @implementation MainWindowViewController{
     NSMutableDictionary* languages;
+    CPlist* languagePlist;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -21,8 +23,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
-        languages = [[NSMutableDictionary alloc] init];
-        [self setupLanguages];
+        languagePlist = [CPlist plistWithPListName:@"languages"];
+        languages = [languagePlist GetDataDictionary:@"languages"];
+        //languages = [[NSMutableDictionary alloc] init];
+        //[self setupLanguages];
     }
 
     return self;

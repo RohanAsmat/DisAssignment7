@@ -11,7 +11,21 @@
 
 @implementation Translation
 
-@dynamic language;
-@dynamic text;
+@synthesize language;
+@synthesize text;
+
+- (instancetype)initWithLanguage:(NSString *)aLanguage text:(NSString *)aText {
+    self = [super init];
+    if (self) {
+        language = aLanguage;
+        text = aText;
+    }
+
+    return self;
+}
+
++ (instancetype)translationWithLanguage:(NSString *)aLanguage text:(NSString *)aText {
+    return [[self alloc] initWithLanguage:aLanguage text:aText];
+}
 
 @end

@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@interface Translation : NSObject {
+@private
+    NSString * language;
+    NSString * text;
+}
 
-@interface Translation : NSManagedObject
+@property (copy) NSString * language;
+@property (copy) NSString * text;
 
-@property (nonatomic, retain) NSString * language;
-@property (nonatomic, retain) NSString * text;
+- (instancetype)initWithLanguage:(NSString *)aLanguage text:(NSString *)aText;
++ (instancetype)translationWithLanguage:(NSString *)aLanguage text:(NSString *)aText;
+
 
 @end

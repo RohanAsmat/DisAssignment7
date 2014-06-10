@@ -9,6 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface EditViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
-@property IBOutlet NSTableView *tableView;  // this array is a link for IB
+
+@property IBOutlet NSTableView *tableView;
+@property NSMutableArray *languages;
+
+-(IBAction) addLanguage:(id)sender;
+-(IBAction) removeLanguage:(id)sender;
 
 @end
