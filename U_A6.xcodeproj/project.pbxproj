@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9EEE1A998E195F6326E0DB /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EEC9725DF9240A9AB49E8 /* Translation.m */; };
 		1C68805E1945DDC600167902 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C68805D1945DDC600167902 /* Cocoa.framework */; };
 		1C6880681945DDC600167902 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6880661945DDC600167902 /* InfoPlist.strings */; };
 		1C68806A1945DDC600167902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6880691945DDC600167902 /* main.m */; };
@@ -23,7 +24,6 @@
 		1C68809C1946099000167902 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809A1946099000167902 /* EditViewController.m */; };
 		1C68809D1946099000167902 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C68809B1946099000167902 /* EditViewController.xib */; };
 		1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */; };
-		1C6880A319461FCA00167902 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6880A219461FCA00167902 /* Translation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9EEC9725DF9240A9AB49E8 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		1B9EEE3AF3319D8110B23103 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
 		1C68805A1945DDC600167902 /* U_A6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U_A6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C68805D1945DDC600167902 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1C6880601945DDC600167902 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,8 +65,6 @@
 		1C68809A1946099000167902 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		1C68809B1946099000167902 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
 		1C68809F19461DFA00167902 /* HelloWorldModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloWorldModel.xcdatamodel; sourceTree = "<group>"; };
-		1C6880A119461FCA00167902 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
-		1C6880A219461FCA00167902 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,6 @@
 		1C6880511945DDC600167902 = {
 			isa = PBXGroup;
 			children = (
-				1C6880A119461FCA00167902 /* Translation.h */,
-				1C6880A219461FCA00167902 /* Translation.m */,
 				1C6880631945DDC600167902 /* U_A6 */,
 				1C6880811945DDC700167902 /* U_A6Tests */,
 				1C68805C1945DDC600167902 /* Frameworks */,
@@ -144,6 +142,8 @@
 				1C68809A1946099000167902 /* EditViewController.m */,
 				1C68809B1946099000167902 /* EditViewController.xib */,
 				1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */,
+				1B9EEC9725DF9240A9AB49E8 /* Translation.m */,
+				1B9EEE3AF3319D8110B23103 /* Translation.h */,
 			);
 			path = U_A6;
 			sourceTree = "<group>";
@@ -281,9 +281,9 @@
 				1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */,
 				1C68809C1946099000167902 /* EditViewController.m in Sources */,
 				1C6880971946076C00167902 /* MainWindowViewController.m in Sources */,
-				1C6880A319461FCA00167902 /* Translation.m in Sources */,
 				1C6880711945DDC600167902 /* AppDelegate.m in Sources */,
 				1C68806A1945DDC600167902 /* main.m in Sources */,
+				1B9EEE1A998E195F6326E0DB /* Translation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
