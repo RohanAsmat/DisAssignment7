@@ -56,6 +56,17 @@
     return [o valueForKey:languageAsKey];
 }
 
+- (void)tableView:(NSTableView *)tableView
+   setObjectValue:(id)object
+   forTableColumn:(NSTableColumn *)tableColumn
+              row:(NSInteger)row {
+
+    Translation *p = [self.languages objectAtIndex:row];
+    NSString *identifier = [tableColumn identifier];
+    [p setValue:object forKey:identifier];
+}
+
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return self.languages.count;
 }

@@ -23,8 +23,13 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+
+        // load languages plist
         languagePlist = [CPlist plistWithPListName:@"languages"];
+        // setup languages from the dictionary
         languages = [languagePlist GetDataDictionary:@"languages"];
+
+        // uncomment to use hardcoded languages
         //languages = [[NSMutableDictionary alloc] init];
         //[self setupLanguages];
     }
@@ -40,7 +45,7 @@
     [[self displayLanguage] setStringValue: languages[[[self.RadioGroupLanguage selectedCell] title]]];
 }
 
-
+// call this to accumulate hardcoded language
 - (void) setupLanguages{
     [languages setObject:@"Good morning" forKey:@"English"];
     [languages setObject:@"Buenos dias" forKey:@"Spanish"];
@@ -48,6 +53,7 @@
     [languages setObject:@"Bonjour" forKey:@"French"];
 }
 
+// create radio buttons by looping through languages
 - (void) createRadioButtons {
     NSArray *cells = [self.RadioGroupLanguage cells];
     NSUInteger i = 0;
@@ -61,10 +67,11 @@
     }
 }
 
+// language radio button on press handler.
 - (IBAction)choseLanguage:(id)sender {
     NSButtonCell *selCell = [sender selectedCell];
-    [[self displayLanguage] setStringValue: languages[selCell.title]];
 
-    //NSLog(@"Selected cell is %d", (int) [selCell tag]);
+    // set the display text (translated version) on the text box
+    [[self displayLanguage] setStringValue: languages[selCell.title]];
 }
 @end
