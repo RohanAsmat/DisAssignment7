@@ -22,6 +22,7 @@
     
     // 1. Create the mainWindow View Controller
     self.mainWindowViewController = [[MainWindowViewController alloc] initWithNibName:@"MainWindowViewController" bundle:nil];
+    
     // 1. Create the editWindow View Controller
     self.editViewController = [[EditViewController alloc] initWithNibName:@"EditViewController" bundle:nil];
     
