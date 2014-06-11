@@ -29,7 +29,7 @@
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-Du-DA9">
                     <rect key="frame" x="78" y="13" width="106" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" image="92A61BD1-AE94-47F1-A963-9E029E5EC6A7" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cyj-Uy-36O">
+                    <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" image="DD8A957C-AC6F-496F-B133-5798BF5DD55B" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cyj-Uy-36O">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -41,7 +41,7 @@
                     <rect key="frame" x="20" y="49" width="222" height="103"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    <size key="cellSize" width="222" height="103"/>
+                    <size key="cellSize" width="58" height="18"/>
                     <size key="intercellSpacing" width="4" height="2"/>
                     <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="B1Q-2u-3FE">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -61,10 +61,9 @@
                 </matrix>
             </subviews>
         </customView>
-        <userDefaultsController representsSharedInstance="YES" id="kim-qq-qvS"/>
     </objects>
     <resources>
-        <image name="92A61BD1-AE94-47F1-A963-9E029E5EC6A7" width="1" height="1">
+        <image name="DD8A957C-AC6F-496F-B133-5798BF5DD55B" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
