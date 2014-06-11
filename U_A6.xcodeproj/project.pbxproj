@@ -21,9 +21,7 @@
 		1C6880881945DDC700167902 /* U_A6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6880871945DDC700167902 /* U_A6Tests.m */; };
 		1C6880971946076C00167902 /* MainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6880951946076C00167902 /* MainWindowViewController.m */; };
 		1C6880981946076C00167902 /* MainWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6880961946076C00167902 /* MainWindowViewController.xib */; };
-		1C68809C1946099000167902 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809A1946099000167902 /* EditViewController.m */; };
-		1C68809D1946099000167902 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C68809B1946099000167902 /* EditViewController.xib */; };
-		1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */; };
+		1C6880A019461DFA00167902 /* U_A6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809E19461DFA00167902 /* U_A6.xcdatamodeld */; };
 		DC40BB581947741F00ABBE8C /* CPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = DC40BB571947741F00ABBE8C /* CPlist.m */; };
 		DC40BB5A194774F800ABBE8C /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC40BB59194774F800ABBE8C /* languages.plist */; };
 		DCD3682E1948247900A59DC4 /* Lang.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3682D1948247900A59DC4 /* Lang.m */; };
@@ -65,10 +63,7 @@
 		1C6880941946076C00167902 /* MainWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowViewController.h; sourceTree = "<group>"; };
 		1C6880951946076C00167902 /* MainWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowViewController.m; sourceTree = "<group>"; };
 		1C6880961946076C00167902 /* MainWindowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowViewController.xib; sourceTree = "<group>"; };
-		1C6880991946099000167902 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
-		1C68809A1946099000167902 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
-		1C68809B1946099000167902 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
-		1C68809F19461DFA00167902 /* HelloWorldModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloWorldModel.xcdatamodel; sourceTree = "<group>"; };
+		1C68809F19461DFA00167902 /* U_A6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = U_A6.xcdatamodel; sourceTree = "<group>"; };
 		DC40BB561947741F00ABBE8C /* CPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlist.h; sourceTree = "<group>"; };
 		DC40BB571947741F00ABBE8C /* CPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPlist.m; sourceTree = "<group>"; };
 		DC40BB59194774F800ABBE8C /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
@@ -153,12 +148,9 @@
 				1C6880941946076C00167902 /* MainWindowViewController.h */,
 				1C6880951946076C00167902 /* MainWindowViewController.m */,
 				1C6880961946076C00167902 /* MainWindowViewController.xib */,
-				1C6880991946099000167902 /* EditViewController.h */,
-				1C68809A1946099000167902 /* EditViewController.m */,
-				1C68809B1946099000167902 /* EditViewController.xib */,
 				DCD3682C1948247900A59DC4 /* Lang.h */,
 				DCD3682D1948247900A59DC4 /* Lang.m */,
-				1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */,
+				1C68809E19461DFA00167902 /* U_A6.xcdatamodeld */,
 				DC40BB59194774F800ABBE8C /* languages.plist */,
 				1B9EE8AC74086ADC7E7F2680 /* LanguagesInstance.m */,
 				1B9EE1C3FB5A65C2AAA4937D /* LanguagesInstance.h */,
@@ -272,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C68809D1946099000167902 /* EditViewController.xib in Resources */,
 				1C6880681945DDC600167902 /* InfoPlist.strings in Resources */,
 				1C6880761945DDC700167902 /* Images.xcassets in Resources */,
 				1C68806E1945DDC600167902 /* Credits.rtf in Resources */,
@@ -297,9 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6880A019461DFA00167902 /* HelloWorldModel.xcdatamodeld in Sources */,
+				1C6880A019461DFA00167902 /* U_A6.xcdatamodeld in Sources */,
 				DC40BB581947741F00ABBE8C /* CPlist.m in Sources */,
-				1C68809C1946099000167902 /* EditViewController.m in Sources */,
 				DCD36831194828BE00A59DC4 /* Translation.m in Sources */,
 				1C6880971946076C00167902 /* MainWindowViewController.m in Sources */,
 				1C6880711945DDC600167902 /* AppDelegate.m in Sources */,
@@ -532,13 +522,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1C68809E19461DFA00167902 /* HelloWorldModel.xcdatamodeld */ = {
+		1C68809E19461DFA00167902 /* U_A6.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1C68809F19461DFA00167902 /* HelloWorldModel.xcdatamodel */,
+				1C68809F19461DFA00167902 /* U_A6.xcdatamodel */,
 			);
-			currentVersion = 1C68809F19461DFA00167902 /* HelloWorldModel.xcdatamodel */;
-			path = HelloWorldModel.xcdatamodeld;
+			currentVersion = 1C68809F19461DFA00167902 /* U_A6.xcdatamodel */;
+			path = U_A6.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

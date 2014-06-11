@@ -6,13 +6,15 @@
 //  Copyright (c) 2014 Rohan Asmat. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "EditViewController.h"
+#import <Cocoa/Cocoa.h> 
 
-@interface MainWindowViewController : NSViewController <LanguageManipulationDelegate>
+@interface MainWindowViewController : NSViewController
 
 @property (weak) IBOutlet NSTextField *displayLanguage;
-@property (weak) IBOutlet NSMatrix *RadioGroupLanguage; 
+@property (weak) IBOutlet NSMatrix *RadioGroupLanguage;
+@property NSManagedObjectContext* managedObjectContext;
+
+- (void)refreshView;
 
 - (IBAction)choseLanguage:(id)sender;
 

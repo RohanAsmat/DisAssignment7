@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface LanguagesInstance : NSObject
 
 // singleton object of this guy

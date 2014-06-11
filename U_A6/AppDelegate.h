@@ -8,11 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #include "MainWindowViewController.h"
-#include "EditViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSWindow *editWindow;
+
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+- (IBAction)saveAction:(id)sender;
 
 @end

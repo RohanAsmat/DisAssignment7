@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47a9594-ffb5-4ad0-a2fa-e41a3b583e3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/U_A6/Lang.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/U_A6/Lang.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/U_A6/EditViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/U_A6/EditViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/U_A6/EditViewController.xib" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/U_A6/HelloWorldModel.xcdatamodeld/HelloWorldModel.xcdatamodel/contents" afterPath="$PROJECT_DIR$/U_A6/U_A6.xcdatamodeld/U_A6.xcdatamodel/contents" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/AppDelegate.h" afterPath="$PROJECT_DIR$/U_A6/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/AppDelegate.m" afterPath="$PROJECT_DIR$/U_A6/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/EditViewController.h" afterPath="$PROJECT_DIR$/U_A6/EditViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/EditViewController.m" afterPath="$PROJECT_DIR$/U_A6/EditViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/EditViewController.xib" afterPath="$PROJECT_DIR$/U_A6/EditViewController.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/LanguagesInstance.m" afterPath="$PROJECT_DIR$/U_A6/LanguagesInstance.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/LanguagesInstance.h" afterPath="$PROJECT_DIR$/U_A6/LanguagesInstance.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/Base.lproj/MainMenu.xib" afterPath="$PROJECT_DIR$/U_A6/Base.lproj/MainMenu.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/MainWindowViewController.h" afterPath="$PROJECT_DIR$/U_A6/MainWindowViewController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/MainWindowViewController.m" afterPath="$PROJECT_DIR$/U_A6/MainWindowViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/MainWindowViewController.xib" afterPath="$PROJECT_DIR$/U_A6/MainWindowViewController.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/Translation.h" afterPath="$PROJECT_DIR$/U_A6/Translation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/Translation.m" afterPath="$PROJECT_DIR$/U_A6/Translation.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6/HelloWorldModel.xcdatamodeld/HelloWorldModel.xcdatamodel/contents" afterPath="$PROJECT_DIR$/U_A6/HelloWorldModel.xcdatamodeld/HelloWorldModel.xcdatamodel/contents" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U_A6.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/U_A6.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,100 +37,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EditViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="525">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1575">
-              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-              <folding>
-                <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-                <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-                <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lang.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/Lang.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="345">
-              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Translation.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/Translation.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Translation.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/Translation.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindowViewController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainWindowViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1485">
-              <caret line="90" column="87" selection-start-line="90" selection-start-column="87" selection-end-line="90" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.4965278" vertical-offset="696" max-vertical-offset="1560">
+              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding>
-                <marker date="1402466510000" expanded="true" signature="303:2201" placeholder="..." />
-                <marker date="1402466510000" expanded="true" signature="303:366" placeholder="{...}" />
-                <marker date="1402466510000" expanded="true" signature="693:786" placeholder="{...}" />
-                <marker date="1402466510000" expanded="true" signature="1388:1881" placeholder="{...}" />
+                <element signature="e#149#185#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LanguagesInstance.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/LanguagesInstance.h">
+      <file leaf-file-name="AppDelegate.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/U_A6/AppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindowViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="375">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lang.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/U_A6/Lang.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27713627" vertical-offset="0" max-vertical-offset="866">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3015">
+              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -143,13 +62,9 @@
       <file leaf-file-name="LanguagesInstance.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/U_A6/LanguagesInstance.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="1140">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-              <folding>
-                <marker date="1402466801000" expanded="true" signature="206:1757" placeholder="..." />
-                <marker date="1402466801000" expanded="true" signature="207:268" placeholder="{...}" />
-                <marker date="1402466801000" expanded="true" signature="1731:1756" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1110">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,9 +87,7 @@
         <option value="$PROJECT_DIR$/U_A6/LanguageTranslation.m" />
         <option value="$PROJECT_DIR$/U_A6/LanguageTranslation.h" />
         <option value="$PROJECT_DIR$/U_A6/MainWindowViewController.h" />
-        <option value="$PROJECT_DIR$/U_A6/AppDelegate.m" />
         <option value="$PROJECT_DIR$/U_A6/LanguagesInstance.h" />
-        <option value="$PROJECT_DIR$/U_A6/MainWindowViewController.m" />
         <option value="$PROJECT_DIR$/U_A6/EditViewController.m" />
         <option value="$PROJECT_DIR$/U_A6/EditViewController.h" />
         <option value="$PROJECT_DIR$/U_A6/LanguagesInstance.m" />
@@ -182,6 +95,8 @@
         <option value="$PROJECT_DIR$/U_A6/Translation.m" />
         <option value="$PROJECT_DIR$/U_A6/Translation.h" />
         <option value="$PROJECT_DIR$/U_A6/Lang.m" />
+        <option value="$PROJECT_DIR$/U_A6/AppDelegate.m" />
+        <option value="$PROJECT_DIR$/U_A6/MainWindowViewController.m" />
       </list>
     </option>
   </component>
@@ -356,26 +271,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1575">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding>
-            <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/U_A6/Lang.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="345">
@@ -405,10 +300,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1485">
           <caret line="90" column="87" selection-start-line="90" selection-start-column="87" selection-end-line="90" selection-end-column="87" />
           <folding>
-            <marker date="1402466510000" expanded="true" signature="303:2201" placeholder="..." />
-            <marker date="1402466510000" expanded="true" signature="303:366" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="693:786" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="1388:1881" placeholder="{...}" />
+            <element signature="e#149#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -441,31 +333,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="1140">
           <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <marker date="1402466801000" expanded="true" signature="206:1757" placeholder="..." />
-            <marker date="1402466801000" expanded="true" signature="207:268" placeholder="{...}" />
-            <marker date="1402466801000" expanded="true" signature="1731:1756" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1515">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -474,10 +342,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1245">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1402466510000" expanded="true" signature="303:2201" placeholder="..." />
-            <marker date="1402466510000" expanded="true" signature="303:366" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="693:786" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="1388:1881" placeholder="{...}" />
+            <element signature="e#149#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -498,35 +363,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1545">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding>
-            <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1620">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <marker date="1402466510000" expanded="true" signature="303:2201" placeholder="..." />
-            <marker date="1402466510000" expanded="true" signature="303:366" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="693:786" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="1388:1881" placeholder="{...}" />
+            <element signature="e#149#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -544,26 +386,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="570">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="375">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1005">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding>
-            <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,78 +431,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/U_A6/AppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="375">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1485">
-          <caret line="90" column="87" selection-start-line="90" selection-start-column="87" selection-end-line="90" selection-end-column="87" />
           <folding>
-            <marker date="1402466510000" expanded="true" signature="303:2201" placeholder="..." />
-            <marker date="1402466510000" expanded="true" signature="303:366" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="693:786" placeholder="{...}" />
-            <marker date="1402466510000" expanded="true" signature="1388:1881" placeholder="{...}" />
+            <element signature="e#136#159#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/U_A6/LanguagesInstance.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/LanguagesInstance.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="1140">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <marker date="1402466801000" expanded="true" signature="206:1757" placeholder="..." />
-            <marker date="1402466801000" expanded="true" signature="207:268" placeholder="{...}" />
-            <marker date="1402466801000" expanded="true" signature="1731:1756" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="525">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U_A6/EditViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1575">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding>
-            <marker date="1402466599000" expanded="true" signature="237:239" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:2387" placeholder="..." />
-            <marker date="1402466599000" expanded="true" signature="279:311" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +475,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/U_A6/Lang.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27713627" vertical-offset="0" max-vertical-offset="866">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/U_A6/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3015">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/U_A6/LanguagesInstance.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1110">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/U_A6/MainWindowViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4965278" vertical-offset="696" max-vertical-offset="1560">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="e#149#185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
