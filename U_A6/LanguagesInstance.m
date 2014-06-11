@@ -5,11 +5,9 @@
 
 #import "LanguagesInstance.h"
 #import "CPlist.h"
-#import "Translation.h"
-
+#import "Lang.h"
 
 @implementation LanguagesInstance {
-
     CPlist *languagePlist;
     NSMutableArray *languages;
 }
@@ -47,7 +45,7 @@ static LanguagesInstance *sharedInstance = nil;
 
     // fill in the languages from the dictionary
     for(NSString* key in aLanguages){
-        Translation *translation = [[Translation alloc] init];
+        Lang *translation = [[Lang alloc] init];
         translation.language = key;
         translation.text = aLanguages[key];
 
@@ -58,7 +56,7 @@ static LanguagesInstance *sharedInstance = nil;
 
 - (NSString *)getTranslationFromLanguages:(NSString *)languageName{
     // get the good morning translation, for loop array and test
-    for(Translation* translation in languages){
+    for(Lang * translation in languages){
         if(translation.language == languageName){
             return translation.text;
         }

@@ -53,7 +53,8 @@
     [self createRadioButtons];
 
     // set default value on text box
-    [[self displayLanguage] setStringValue: [lang getTranslationFromLanguages: [[self.RadioGroupLanguage selectedCell] title]]];
+    NSString *def = [lang getTranslationFromLanguages: [[self.RadioGroupLanguage selectedCell] title]];
+    [[self displayLanguage] setStringValue: (def != nil)?def:@""];
 }
 
 
@@ -64,7 +65,7 @@
 
     // refill the radio group
     for(NSUInteger i = 0; i < languages.count; i++){
-        Translation *translation = languages[i];
+        Lang *translation = languages[i];
 
         if(i > 0) {
             @try {

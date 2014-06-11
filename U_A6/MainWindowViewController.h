@@ -12,7 +12,7 @@
 @interface MainWindowViewController : NSViewController <LanguageManipulationDelegate>
 
 @property (weak) IBOutlet NSTextField *displayLanguage;
-@property (weak) IBOutlet NSMatrix *RadioGroupLanguage;
+@property (weak) IBOutlet NSMatrix *RadioGroupLanguage; 
 
 - (IBAction)choseLanguage:(id)sender;
 
