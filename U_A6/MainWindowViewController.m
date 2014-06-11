@@ -9,9 +9,9 @@
 #import "MainWindowViewController.h"
 #import "Translation.h"
 
-@implementation MainWindowViewController{
-    NSMutableArray* languages;
-}
+@implementation MainWindowViewController
+
+@synthesize languages;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,6 +67,7 @@
     [[self displayLanguage] setStringValue: [self getTranslationFromLanguages: selCell.title]];
 }
 
+// get the good morning translation, for loop array and test
 - (NSString *)getTranslationFromLanguages:(NSString *)languageName{
     // get the good morning translation, for loop array and test
     for(Translation *translation in languages){
@@ -78,7 +79,7 @@
     return nil;
 }
 
-
+// get the data
 - (NSArray *)fetchObjectsForEntityName:(NSString *)entityName
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -95,4 +96,18 @@
 
     return fetchedObjects;
 }
+
+- (void)onBeforeAddObject:(id)object {
+    //NSLog(@"akkefwf");
+}
+
+- (void)onEditObject:(id)value forKey:(NSString *)key {
+    [self refreshView];
+}
+
+- (void)onRemoveObject:(id)object {
+    [self refreshView];
+}
+
+
 @end

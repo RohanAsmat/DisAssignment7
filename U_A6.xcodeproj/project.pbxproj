@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B9EE6753E94AC39643D57A4 /* LanguagesInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EE8AC74086ADC7E7F2680 /* LanguagesInstance.m */; };
+		1B9EE0C660F8EC5969A2C392 /* RNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EE0FA7DF20442180AF3EA /* RNSArrayController.m */; };
 		1C68805E1945DDC600167902 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C68805D1945DDC600167902 /* Cocoa.framework */; };
 		1C6880681945DDC600167902 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6880661945DDC600167902 /* InfoPlist.strings */; };
 		1C68806A1945DDC600167902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6880691945DDC600167902 /* main.m */; };
@@ -23,8 +23,6 @@
 		1C6880981946076C00167902 /* MainWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6880961946076C00167902 /* MainWindowViewController.xib */; };
 		1C6880A019461DFA00167902 /* U_A6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C68809E19461DFA00167902 /* U_A6.xcdatamodeld */; };
 		DC40BB581947741F00ABBE8C /* CPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = DC40BB571947741F00ABBE8C /* CPlist.m */; };
-		DC40BB5A194774F800ABBE8C /* languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC40BB59194774F800ABBE8C /* languages.plist */; };
-		DCD3682E1948247900A59DC4 /* Lang.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3682D1948247900A59DC4 /* Lang.m */; };
 		DCD36831194828BE00A59DC4 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD36830194828BE00A59DC4 /* Translation.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B9EE1C3FB5A65C2AAA4937D /* LanguagesInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguagesInstance.h; sourceTree = "<group>"; };
-		1B9EE8AC74086ADC7E7F2680 /* LanguagesInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguagesInstance.m; sourceTree = "<group>"; };
+		1B9EE0FA7DF20442180AF3EA /* RNSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSArrayController.m; sourceTree = "<group>"; };
+		1B9EEBA3EB391BE6B00B9037 /* RNSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSArrayController.h; sourceTree = "<group>"; };
 		1C68805A1945DDC600167902 /* U_A6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U_A6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C68805D1945DDC600167902 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1C6880601945DDC600167902 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -66,9 +64,6 @@
 		1C68809F19461DFA00167902 /* U_A6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = U_A6.xcdatamodel; sourceTree = "<group>"; };
 		DC40BB561947741F00ABBE8C /* CPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlist.h; sourceTree = "<group>"; };
 		DC40BB571947741F00ABBE8C /* CPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPlist.m; sourceTree = "<group>"; };
-		DC40BB59194774F800ABBE8C /* languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = languages.plist; sourceTree = "<group>"; };
-		DCD3682C1948247900A59DC4 /* Lang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lang.h; sourceTree = "<group>"; };
-		DCD3682D1948247900A59DC4 /* Lang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lang.m; sourceTree = "<group>"; };
 		DCD3682F194828BE00A59DC4 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
 		DCD36830194828BE00A59DC4 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,12 +143,9 @@
 				1C6880941946076C00167902 /* MainWindowViewController.h */,
 				1C6880951946076C00167902 /* MainWindowViewController.m */,
 				1C6880961946076C00167902 /* MainWindowViewController.xib */,
-				DCD3682C1948247900A59DC4 /* Lang.h */,
-				DCD3682D1948247900A59DC4 /* Lang.m */,
 				1C68809E19461DFA00167902 /* U_A6.xcdatamodeld */,
-				DC40BB59194774F800ABBE8C /* languages.plist */,
-				1B9EE8AC74086ADC7E7F2680 /* LanguagesInstance.m */,
-				1B9EE1C3FB5A65C2AAA4937D /* LanguagesInstance.h */,
+				1B9EE0FA7DF20442180AF3EA /* RNSArrayController.m */,
+				1B9EEBA3EB391BE6B00B9037 /* RNSArrayController.h */,
 			);
 			path = U_A6;
 			sourceTree = "<group>";
@@ -267,7 +259,6 @@
 				1C6880681945DDC600167902 /* InfoPlist.strings in Resources */,
 				1C6880761945DDC700167902 /* Images.xcassets in Resources */,
 				1C68806E1945DDC600167902 /* Credits.rtf in Resources */,
-				DC40BB5A194774F800ABBE8C /* languages.plist in Resources */,
 				1C6880741945DDC700167902 /* MainMenu.xib in Resources */,
 				1C6880981946076C00167902 /* MainWindowViewController.xib in Resources */,
 			);
@@ -294,8 +285,7 @@
 				1C6880971946076C00167902 /* MainWindowViewController.m in Sources */,
 				1C6880711945DDC600167902 /* AppDelegate.m in Sources */,
 				1C68806A1945DDC600167902 /* main.m in Sources */,
-				1B9EE6753E94AC39643D57A4 /* LanguagesInstance.m in Sources */,
-				DCD3682E1948247900A59DC4 /* Lang.m in Sources */,
+				1B9EE0C660F8EC5969A2C392 /* RNSArrayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,9 @@
     self.mainWindowViewController.view.frame = ((NSView*)self.window.contentView).bounds;
     self.mainWindowViewController.managedObjectContext = self.managedObjectContext;
     [self.mainWindowViewController refreshView];
+
+    // set delegate
+    self.LangArrayController.delegate = self.mainWindowViewController;
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.RohanAsmat.U_A6" in the user's Application Support directory.
@@ -192,6 +195,5 @@
     
     return NSTerminateNow;
 }
-
 
 @end
