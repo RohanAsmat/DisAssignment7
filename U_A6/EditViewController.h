@@ -7,9 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Translation.h"
+
+@protocol LanguageManipulationDelegate <NSObject>
+- (void)onAfterEdit:(NSMutableArray *) languages;
+- (void)onAfterAdd:(NSMutableArray*) languages;
+@end
 
 @interface EditViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
 
+@property (strong) id<LanguageManipulationDelegate> delegate;
 @property IBOutlet NSTableView *tableView;
 @property NSMutableArray *languages;
 

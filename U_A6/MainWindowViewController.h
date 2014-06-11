@@ -7,13 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "EditViewController.h"
 
-@interface MainWindowViewController : NSViewController
+@interface MainWindowViewController : NSViewController <LanguageManipulationDelegate>
 
 @property (weak) IBOutlet NSTextField *displayLanguage;
 @property (weak) IBOutlet NSMatrix *RadioGroupLanguage;
 
 - (IBAction)choseLanguage:(id)sender;
-
 
 @end

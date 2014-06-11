@@ -7,13 +7,14 @@
 //
 
 #import "EditViewController.h"
-#import "Translation.h"
+#import "LanguagesInstance.h"
 
 @interface EditViewController ()
 
 @end
 
 @implementation EditViewController{
+    LanguagesInstance* lang;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -21,30 +22,20 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+        lang = LanguagesInstance.Instance;
         self.languages = [[NSMutableArray alloc] init];
     }
 
     return self;
 }
 
-/** uncomment to setup fake data
 - (void)loadView {
     [super loadView];
 
-    NSString *newLang = [NSString stringWithFormat:@"country- %tu", self.languages.count];
-    Translation *lang = [Translation translationWithLanguage:newLang text:@"good morning"];
-
-    // add language to row
-    [self.languages addObject: lang];
-
-
-     newLang = [NSString stringWithFormat:@"country- %tu", self.languages.count];
-     lang = [Translation translationWithLanguage:newLang text:@"good morning"];
-
-    // add language to row
-    [self.languages addObject: lang];
+    // fill in the languages
+    self.languages = [lang getLanguages];
 }
-*/
+
 
 - (id)tableView:(NSTableView *)tableView
         objectValueForTableColumn:(NSTableColumn *)tableColumn
@@ -64,8 +55,11 @@
     Translation *p = [self.languages objectAtIndex:row];
     NSString *identifier = [tableColumn identifier];
     [p setValue:object forKey:identifier];
-}
 
+    if(self.delegate != nil){
+        [self.delegate onAfterEdit:self.languages];
+    }
+}
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return self.languages.count;
@@ -74,13 +68,17 @@
 -(IBAction) addLanguage:(id)sender{
     //set up the new language
     NSString *newLang = [NSString stringWithFormat:@"country- %tu", self.languages.count];
-    Translation *lang = [Translation translationWithLanguage:newLang text:@"good morning"];
+    Translation *lg = [Translation translationWithLanguage:newLang text:@"good morning"];
 
     // add language to row
-    [self.languages addObject: lang];
+    [self.languages addObject: lg];
 
     // reload the view
     [self.tableView reloadData];
+    
+    if(self.delegate != nil){
+        [self.delegate onAfterAdd:self.languages];
+    }
 }
 
 -(IBAction) removeLanguage:(id)sender{
@@ -89,6 +87,10 @@
     if(row != -1){
         [self.languages removeObjectAtIndex:(NSUInteger) row];
         [self.tableView reloadData];
+        
+        if(self.delegate != nil){
+            [self.delegate onAfterEdit:self.languages];
+        }
     }
 }
 

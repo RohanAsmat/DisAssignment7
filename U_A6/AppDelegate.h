@@ -11,9 +11,8 @@
 #include "EditViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSWindow *editWindow;
-
-
 
 @end

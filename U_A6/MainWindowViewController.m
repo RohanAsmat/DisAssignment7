@@ -7,15 +7,15 @@
 //
 
 #import "MainWindowViewController.h"
-#import "CPlist.h"
+#import "LanguagesInstance.h"
 
 @interface MainWindowViewController ()
 
 @end
 
 @implementation MainWindowViewController{
-    NSMutableDictionary* languages;
-    CPlist* languagePlist;
+    NSMutableArray* languages;
+    LanguagesInstance* lang;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,55 +23,70 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
-
-        // load languages plist
-        languagePlist = [CPlist plistWithPListName:@"languages"];
-        // setup languages from the dictionary
-        languages = [languagePlist GetDataDictionary:@"languages"];
-
-        // uncomment to use hardcoded languages
-        //languages = [[NSMutableDictionary alloc] init];
-        //[self setupLanguages];
+        lang = LanguagesInstance.Instance;
     }
 
     return self;
 }
 
+- (void)onAfterAdd:(NSMutableArray *)aLanguages {
+    languages = aLanguages;
+
+    // reset the radio groups
+    [self createRadioButtons];
+}
+
+- (void)onAfterEdit:(NSMutableArray *)aLanguages {
+    languages = aLanguages;
+
+    // reset the radio groups
+    [self createRadioButtons];
+}
+
 - (void)loadView {
     [super loadView];
 
+    // get the languages
+    languages = [lang getLanguages];
+
+    // createRadioButtons
     [self createRadioButtons];
-    
-    [[self displayLanguage] setStringValue: languages[[[self.RadioGroupLanguage selectedCell] title]]];
+
+    // set default value on text box
+    [[self displayLanguage] setStringValue: [lang getTranslationFromLanguages: [[self.RadioGroupLanguage selectedCell] title]]];
 }
 
-// call this to accumulate hardcoded language
-- (void) setupLanguages{
-    [languages setObject:@"Good morning" forKey:@"English"];
-    [languages setObject:@"Buenos dias" forKey:@"Spanish"];
-    [languages setObject:@"Guten morgen" forKey:@"German"];
-    [languages setObject:@"Bonjour" forKey:@"French"];
-}
 
 // create radio buttons by looping through languages
 - (void) createRadioButtons {
     NSArray *cells = [self.RadioGroupLanguage cells];
-    NSUInteger i = 0;
-    
-    for(NSString * key in languages){
-        if(i > 0)
+ 
+
+    // refill the radio group
+    for(NSUInteger i = 0; i < languages.count; i++){
+        Translation *translation = languages[i];
+
+        if(i > 0) {
+            @try {
+                [self.RadioGroupLanguage removeRow:i];
+            }
+            @catch (id exception){
+                NSLog(@"");
+            }
+
             [self.RadioGroupLanguage addRow];
+        }
         
-        [cells[i] setTitle:key];
-        i++;
+        [cells[i] setTitle:translation.language];
     }
 }
 
 // language radio button on press handler.
 - (IBAction)choseLanguage:(id)sender {
+    // selected cell
     NSButtonCell *selCell = [sender selectedCell];
 
     // set the display text (translated version) on the text box
-    [[self displayLanguage] setStringValue: languages[selCell.title]];
+    [[self displayLanguage] setStringValue: [lang getTranslationFromLanguages: selCell.title]];
 }
 @end

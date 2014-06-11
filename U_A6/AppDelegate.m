@@ -32,6 +32,9 @@
     // 2. Add the windowview controller to the Window's content view
     [self.editWindow.contentView addSubview:self.editViewController.view];
     self.editViewController.view.frame = ((NSView*)self.editWindow.contentView).bounds;
+
+    // set the delegate after edit
+    self.editViewController.delegate = self.mainWindowViewController;
 }
 
 @end
