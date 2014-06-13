@@ -33,6 +33,15 @@
 
     // set delegate
     self.LangArrayController.delegate = self.mainWindowViewController;
+    
+    //setting position of windows
+    NSPoint point = NSMakePoint(200, 600);
+    [[self window] setFrameTopLeftPoint:point];
+    
+    NSPoint point2 = NSMakePoint(700, 600);
+    [[self editWindow] setFrameTopLeftPoint:point2];
+    
+    
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.RohanAsmat.U_A6" in the user's Application Support directory.
