@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -374,6 +375,18 @@
                                     <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Open Main Window" id="j4P-IY-BET">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="opneMainWindow:" target="Voe-Tx-rLC" id="735-Yw-hTS"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open Editor Window" id="6HG-cO-Pv5">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openEditorWindow:" target="Voe-Tx-rLC" id="RkV-mw-pyH"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
                             <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -468,6 +481,9 @@
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rH9-Oc-66O" secondAttribute="height" multiplier="22:13" id="7VD-2P-kNu"/>
+                        </constraints>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="PJ1-Rt-OgW">
                             <rect key="frame" x="-7" y="2" width="0.0" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
@@ -499,7 +515,10 @@
                         <rect key="frame" x="103" y="5" width="82" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3aY-xD-396"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="7qF-hi-YhV"/>
                             <constraint firstAttribute="width" constant="70" id="dAt-1A-7nP"/>
+                            <constraint firstAttribute="width" secondItem="c6v-pT-FqZ" secondAttribute="height" multiplier="10:3" id="mNU-sg-5bF"/>
                         </constraints>
                         <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="azG-kp-bZd">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -511,11 +530,17 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="rH9-Oc-66O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zJ3-7j-fpS" secondAttribute="leading" constant="20" id="8T3-7L-zH3"/>
+                    <constraint firstItem="c6v-pT-FqZ" firstAttribute="top" secondItem="rH9-Oc-66O" secondAttribute="bottom" constant="8" id="CT3-Tj-AWo"/>
                     <constraint firstItem="rH9-Oc-66O" firstAttribute="top" secondItem="zJ3-7j-fpS" secondAttribute="top" constant="20" symbolic="YES" id="DhX-Wc-dpy"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rH9-Oc-66O" secondAttribute="trailing" constant="20" id="L7h-Ou-K33"/>
                     <constraint firstItem="c6v-pT-FqZ" firstAttribute="baseline" secondItem="c7H-dy-nDg" secondAttribute="baseline" id="Lv8-4y-5ag"/>
                     <constraint firstAttribute="trailing" secondItem="rH9-Oc-66O" secondAttribute="trailing" constant="20" symbolic="YES" id="MWb-yZ-NY1"/>
+                    <constraint firstAttribute="bottom" secondItem="c6v-pT-FqZ" secondAttribute="bottom" constant="12" id="VTw-f6-mDG"/>
+                    <constraint firstItem="c6v-pT-FqZ" firstAttribute="top" secondItem="rH9-Oc-66O" secondAttribute="bottom" constant="8" id="Z4R-HZ-PHL"/>
                     <constraint firstAttribute="bottom" secondItem="c7H-dy-nDg" secondAttribute="bottom" constant="12" id="eys-eG-0Cg"/>
                     <constraint firstItem="c7H-dy-nDg" firstAttribute="leading" secondItem="rH9-Oc-66O" secondAttribute="leading" id="fqu-iT-2gh"/>
+                    <constraint firstItem="rH9-Oc-66O" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zJ3-7j-fpS" secondAttribute="top" constant="20" id="nFq-YM-wJf"/>
                     <constraint firstItem="c7H-dy-nDg" firstAttribute="top" secondItem="rH9-Oc-66O" secondAttribute="bottom" constant="8" id="vuN-gE-qz5"/>
                     <constraint firstItem="c6v-pT-FqZ" firstAttribute="leading" secondItem="c7H-dy-nDg" secondAttribute="trailing" constant="19" id="wPd-Pn-CX4"/>
                     <constraint firstItem="rH9-Oc-66O" firstAttribute="leading" secondItem="zJ3-7j-fpS" secondAttribute="leading" constant="20" symbolic="YES" id="wVf-d5-M6x"/>

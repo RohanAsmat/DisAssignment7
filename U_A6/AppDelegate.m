@@ -41,6 +41,15 @@
     NSPoint point2 = NSMakePoint(700, 600);
     [[self editWindow] setFrameTopLeftPoint:point2];
     
+    //adding menu to open closed windows....
+    NSMenuItem *mainItem = [[NSMenuItem alloc] init];
+    [mainItem setTitle:@"Open Windows"];
+    
+    NSMenu *submenu = [[NSMenu alloc] init];
+    [submenu addItemWithTitle:@"Main Window" action:nil keyEquivalent:@""];
+    
+    [mainItem setSubmenu:submenu];
+    
     
 }
 
@@ -157,6 +166,16 @@
     if (![[self managedObjectContext] save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
+}
+
+- (IBAction)opneMainWindow:(id)sender {
+    [self.window makeKeyAndOrderFront:self];
+
+}
+
+- (IBAction)openEditorWindow:(id)sender {
+    [self.editWindow makeKeyAndOrderFront:self];
+
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender

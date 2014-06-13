@@ -20,5 +20,7 @@
 @property (weak) IBOutlet RNSArrayController *LangArrayController;
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)opneMainWindow:(id)sender;
+- (IBAction)openEditorWindow:(id)sender;
 
 @end
