@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowViewController">
@@ -21,8 +22,11 @@
                     <rect key="frame" x="20" y="266" width="222" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <constraints>
+                        <constraint firstAttribute="width" secondItem="rAQ-lS-vkX" secondAttribute="height" multiplier="111:11" id="Gre-FQ-BMP"/>
                         <constraint firstAttribute="width" constant="222" id="VOk-PW-TiJ"/>
                         <constraint firstAttribute="height" constant="22" id="ZaZ-0m-ZPZ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="oF1-41-BQ5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="222" id="yD5-Jd-HrS"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="mLq-p7-VnB">
                         <font key="font" metaFont="system"/>
@@ -33,7 +37,7 @@
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEM-Du-DA9">
                     <rect key="frame" x="78" y="13" width="106" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" image="2AF8FDBC-7F15-469D-9485-7383FB320254" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cyj-Uy-36O">
+                    <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" image="DBE3903C-B316-4FAB-8905-41667EF8AB74" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cyj-Uy-36O">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -64,14 +68,10 @@
                     </connections>
                 </matrix>
             </subviews>
-            <constraints>
-                <constraint firstItem="rAQ-lS-vkX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="imE-Iu-Y8c"/>
-                <constraint firstAttribute="trailing" secondItem="rAQ-lS-vkX" secondAttribute="trailing" constant="20" id="oCl-Oe-Brh"/>
-            </constraints>
         </customView>
     </objects>
     <resources>
-        <image name="2AF8FDBC-7F15-469D-9485-7383FB320254" width="1" height="1">
+        <image name="DBE3903C-B316-4FAB-8905-41667EF8AB74" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
